@@ -1,5 +1,7 @@
-runtime: nodejs
-env: flex
+# This file is needed for anything that gets deployed to Google App Engine(GAE) which is part of the Google Cloud Platform(GCP)
+# It contains all the information about how this needs to be run
+runtime: nodejs # The environment is a Node.js Server
+env: flex # GAE can run in standard or flexible environment. Node.js is currently only supported on flexible
 
 env_variables:
   GOOGLE_APPLICATION_CREDENTIALS: 'google_credentials.json'
